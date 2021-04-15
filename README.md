@@ -1,5 +1,5 @@
 # 19104033_Fauziyah-Ulur-Rosyad-Prawidani
-Mata Kuliah GUI
+Mata Kuliah Pemrograman GUI
 
 
 Nama  : Fauziyah Ulur Rosyad Prawidani
