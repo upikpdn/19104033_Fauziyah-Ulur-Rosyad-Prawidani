@@ -7,10 +7,9 @@ NIM  : 19104033
 
 Kelas: S1 SE 03 A
 
-Desain 1
 
-![desain 1](https://user-images.githubusercontent.com/53574005/114346508-c99aee00-9b8d-11eb-8a0a-141240d70cc1.jpg)
+![Cuplikan layar 2021-05-04 143548](https://user-images.githubusercontent.com/53574005/116973337-90feb800-ace6-11eb-85f7-3131dffd432c.jpg)
 
-Desain 2
 
-![Desain 2](https://user-images.githubusercontent.com/53574005/114346673-0e268980-9b8e-11eb-9b5f-de4dd69cf0c2.jpg)
+
+![a](https://user-images.githubusercontent.com/53574005/116974096-c5bf3f00-ace7-11eb-9b80-64311e68cb65.jpg)
