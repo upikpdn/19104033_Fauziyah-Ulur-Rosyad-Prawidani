@@ -3,9 +3,9 @@ Mata Kuliah Praktikum Pemrograman GUI
 
 Nama : Fauziyah Ulur Rosyad Prawidani
 
-NIM  : 19104033
+NIM    : 19104033
 
-Kelas: S1 SE 03 A
+Kelas  : S1 SE 03 A
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------
