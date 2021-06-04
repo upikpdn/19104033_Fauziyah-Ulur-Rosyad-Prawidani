@@ -11,7 +11,7 @@ from EntryForm import *
 
 class Ui_MainWindow(object):
     def setupUi(self, Form):
-        Form.setObjectName("Form")
+        Form.setObjectName("MainWindow")
         Form.resize(436, 484)
         self.DataMahasiswa = QtWidgets.QLabel(Form)
         self.DataMahasiswa.setGeometry(QtCore.QRect(130, 20, 165, 16))
