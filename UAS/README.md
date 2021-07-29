@@ -14,4 +14,17 @@ Kelas : S1 SE 03 A
 
 Panduan :
 
-1. 
+Transaksi uang
+
+1.	Pilih menu minuman “Teh Pucuk”
+2.	Pilih metode pembayaran uang
+3.	Lalu masukkan uang pas sesuai jumlah yang tertera
+
+Transaksi bahasa
+
+1.	Pilih menu minuman “Teh Pucuk”
+2.	Pilih metode pembayaran Bahasa
+3.	Masukkan Bahasa sesuai dengan perintah
+4.	Jika benar, maka kamu akan mendapatkan 1 minuman gratis
+5.	Jika salah, lakukan pembayaran dengan uang
+
