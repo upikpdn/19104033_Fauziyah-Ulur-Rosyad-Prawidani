@@ -20,6 +20,8 @@ class detail_produk(object):
         DETAILPRODUK.resize(800, 614)
         DETAILPRODUK.setAutoFillBackground(False)
         DETAILPRODUK.setAnimated(True)
+        
+
         self.centralwidget = QtWidgets.QWidget(DETAILPRODUK)
         self.centralwidget.setObjectName("centralwidget")
         self.gridLayout_5 = QtWidgets.QGridLayout(self.centralwidget)
@@ -30,49 +32,71 @@ class detail_produk(object):
         self.frame_4.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_4.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_4.setObjectName("frame_4")
+
+        # Membuat label untuk judul produk
         self.JudulProduk = QtWidgets.QLabel(self.frame_4)
         self.JudulProduk.setGeometry(QtCore.QRect(20, 20, 361, 31))
         self.JudulProduk.setStyleSheet("font: 18pt \"MS Shell Dlg 2\";")
         self.JudulProduk.setObjectName("JudulProduk")
+
+        # Membuat label untuk harga
         self.Harga = QtWidgets.QLabel(self.frame_4)
         self.Harga.setGeometry(QtCore.QRect(20, 70, 281, 21))
         self.Harga.setStyleSheet("font: 16pt \"MS Shell Dlg 2\";")
         self.Harga.setObjectName("Harga")
-        self.Jml_spinBox = QtWidgets.QSpinBox(self.frame_4)
-        self.Jml_spinBox.setGeometry(QtCore.QRect(170, 190, 42, 22))
-        self.Jml_spinBox.setObjectName("Jml_spinBox")
+
+        # Membuat label penanda comboBox yang akan digunakan untuk memilih varian produk
         self.Varian = QtWidgets.QLabel(self.frame_4)
         self.Varian.setGeometry(QtCore.QRect(20, 150, 111, 21))
         self.Varian.setStyleSheet("font: 12pt \"MS Shell Dlg 2\";")
         self.Varian.setObjectName("Varian")
-        self.Jml = QtWidgets.QLabel(self.frame_4)
-        self.Jml.setGeometry(QtCore.QRect(20, 190, 131, 21))
-        self.Jml.setStyleSheet("font: 12pt \"MS Shell Dlg 2\";")
-        self.Jml.setObjectName("Jml")
-        self.PilihMetode = QtWidgets.QLabel(self.frame_4)
-        self.PilihMetode.setGeometry(QtCore.QRect(20, 270, 241, 21))
-        self.PilihMetode.setStyleSheet("font: 12pt \"MS Shell Dlg 2\";")
-        self.PilihMetode.setObjectName("PilihMetode")
+
+        # Membuat comboBox untuk memilih varian produk
         self.Varian_comboBox = QtWidgets.QComboBox(self.frame_4)
         self.Varian_comboBox.setEnabled(False)
         self.Varian_comboBox.setGeometry(QtCore.QRect(170, 150, 171, 22))
         self.Varian_comboBox.setObjectName("Varian_comboBox")
+
+        # Membuat label sebagai penanda spinBox yang akan digunakan untuk menambahkan jumlah produk yang akan dibeli
+        self.Jml = QtWidgets.QLabel(self.frame_4)
+        self.Jml.setGeometry(QtCore.QRect(20, 190, 131, 21))
+        self.Jml.setStyleSheet("font: 12pt \"MS Shell Dlg 2\";")
+        self.Jml.setObjectName("Jml")
+
+        # Membuat spinBox untuk menambahkan jumlah produk yang akan dibeli
+        self.Jml_spinBox = QtWidgets.QSpinBox(self.frame_4)
+        self.Jml_spinBox.setGeometry(QtCore.QRect(170, 190, 42, 22))
+        self.Jml_spinBox.setObjectName("Jml_spinBox")
+
+        # Membuat label sebagai penanda untuk radioButon yang akan digunakan untuk memilih metode pembayaran
+        self.PilihMetode = QtWidgets.QLabel(self.frame_4)
+        self.PilihMetode.setGeometry(QtCore.QRect(20, 270, 241, 21))
+        self.PilihMetode.setStyleSheet("font: 12pt \"MS Shell Dlg 2\";")
+        self.PilihMetode.setObjectName("PilihMetode")
+
+        # Membuat radioButton opsi uang untuk user yang memilih metode pembayaran uang
         self.Uang_radioButton = QtWidgets.QRadioButton(self.frame_4)
         self.Uang_radioButton.setGeometry(QtCore.QRect(20, 300, 95, 31))
         self.Uang_radioButton.setStyleSheet("font: 10pt \"MS Shell Dlg 2\";")
         self.Uang_radioButton.setObjectName("Uang_radioButton")
+
+        # Membuat radioButton opsi bahasa untuk user yang memilih metode pembayaran dengan mentraslatekan bahasa daerah
         self.Bhs_radioButton_2 = QtWidgets.QRadioButton(self.frame_4)
         self.Bhs_radioButton_2.setGeometry(QtCore.QRect(20, 339, 291, 31))
         self.Bhs_radioButton_2.setStyleSheet("font: 10pt \"MS Shell Dlg 2\";")
         self.Bhs_radioButton_2.setObjectName("Bhs_radioButton_2")
+
+        # Membuat pushButton pilih untuk melanjutkan ke tahap selanjutnya
         self.Pilih_pushButton = QtWidgets.QPushButton(self.frame_4)
         self.Pilih_pushButton.setGeometry(QtCore.QRect(20, 420, 111, 31))
         self.Pilih_pushButton.setStyleSheet("font: 10pt \"MS Shell Dlg 2\";")
         self.Pilih_pushButton.setAutoDefault(True)
         self.Pilih_pushButton.setDefault(False)
         self.Pilih_pushButton.setObjectName("Pilih_pushButton")
+        # Mengkoneksikan button pilih
         self.Pilih_pushButton.clicked.connect(self.pilih)
         
+        # Membuat pushButton batal untuk membatalkan membeli produk
         self.Batal_pushButton_2 = QtWidgets.QPushButton(self.frame_4)
         self.Batal_pushButton_2.setEnabled(True)
         self.Batal_pushButton_2.setGeometry(QtCore.QRect(140, 420, 111, 31))
@@ -82,33 +106,44 @@ class detail_produk(object):
         self.Batal_pushButton_2.setDefault(False)
         self.Batal_pushButton_2.setFlat(False)
         self.Batal_pushButton_2.setObjectName("Batal_pushButton_2")
+
         self.gridLayout_2.addWidget(self.frame_4, 0, 1, 1, 1)
         self.gridLayout_5.addLayout(self.gridLayout_2, 0, 1, 2, 1)
         self.gridLayout = QtWidgets.QGridLayout()
         self.gridLayout.setObjectName("gridLayout")
+
         self.frame = QtWidgets.QFrame(self.centralwidget)
         self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame.setObjectName("frame")
+
+        # Membuat label untuk menambahkan gambar produk
         self.GambarTeh = QtWidgets.QLabel(self.frame)
         self.GambarTeh.setGeometry(QtCore.QRect(60, 0, 261, 271))
         self.GambarTeh.setText("")
         self.GambarTeh.setPixmap(QtGui.QPixmap("teh_pucuk-removebg-preview.png"))
         self.GambarTeh.setScaledContents(True)
         self.GambarTeh.setObjectName("GambarTeh")
+
+
         self.gridLayout.addWidget(self.frame, 0, 0, 1, 1)
         self.gridLayout_5.addLayout(self.gridLayout, 0, 0, 1, 1)
         self.gridLayout_4 = QtWidgets.QGridLayout()
         self.gridLayout_4.setObjectName("gridLayout_4")
+
         self.frame_2 = QtWidgets.QFrame(self.centralwidget)
         self.frame_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_2.setObjectName("frame_2")
+
+        # Membuat label untuk deskripsi produk
         self.Deskripsi = QtWidgets.QLabel(self.frame_2)
         self.Deskripsi.setGeometry(QtCore.QRect(4, 5, 371, 251))
         self.Deskripsi.setObjectName("Deskripsi")
+
         self.gridLayout_4.addWidget(self.frame_2, 0, 0, 1, 1)
         self.gridLayout_5.addLayout(self.gridLayout_4, 1, 0, 1, 1)
+
         DETAILPRODUK.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(DETAILPRODUK)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 26))
@@ -118,11 +153,12 @@ class detail_produk(object):
         self.statusbar.setObjectName("statusbar")
         DETAILPRODUK.setStatusBar(self.statusbar)
 
+        # Memanggil fungsi retranslateUi
         self.retranslateUi(DETAILPRODUK)
         QtCore.QMetaObject.connectSlotsByName(DETAILPRODUK)
 
     
-
+    # Fungsi untuk memberi nama/text pada objek
     def retranslateUi(self, DETAILPRODUK):
         _translate = QtCore.QCoreApplication.translate
         DETAILPRODUK.setWindowTitle(_translate("DETAILPRODUK", "MainWindow"))
@@ -152,7 +188,7 @@ class detail_produk(object):
 "Gula                           18 g\n"
 "Natrium                      10 mg"))
         
-        
+    # Membuat Fungsi untuk message box
     def messagebox(self, title, message):
         mess = QtWidgets.QMessageBox()
         mess.setWindowTitle(title)
@@ -160,14 +196,15 @@ class detail_produk(object):
         mess.setStandardButtons(QtWidgets.QMessageBox.Ok)
         mess.exec_()
 
+    # Membuat fungsi percabangan pada saan menekan button pilih
     def pilih (self):
+        # jika user memilih opsi uang, maka memunculkan (message box) perintah untuk memasukan uang pas
         if self.Uang_radioButton.isChecked() :
             self.messagebox("", "Silahkan Masukkan Uang Pas \n \n   Rp 25.000")
 
+        # jika user memilih opsi bahasa, maka akan masuk ke halaman untuk menginputkan bahasa
         if self.Bhs_radioButton_2.isChecked() :
-            x = BAHASA.show()
-            x.setupUi(self.DETAILPRODUK)
-            self.DETAILPRODUK.show()
+            BAHASA.show()
 
 
 
