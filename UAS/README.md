@@ -34,7 +34,7 @@ Transaksi bahasa
 
 ![Menu](https://user-images.githubusercontent.com/53574005/127580016-445bf3f6-a271-4961-8d9b-9746c71dbf33.jpg)
 
-2.	Pilih metode pembayaran Bahasa
+2.	Pilih metode pembayaran Bahasa (transaksi ini dapat dilakukan dari halaman detail produk)
 
 ![bahasa](https://user-images.githubusercontent.com/53574005/127580019-a940860a-f681-49a4-a8a0-e3a9d65ca487.jpg)
 
